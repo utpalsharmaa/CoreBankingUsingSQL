@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "Build",
+		"type": "shell",
+		"command": "g++",
+		"args": [
+		  "-std=c++0x",
+		  "-o",
+		  "make",
+		  "Cpp_files/Customer.cpp",
+		  "Cpp_files/BankClerk.cpp",
+		  "DatabaseConnection/DatabaseConnector.cpp",
+		  "main.cpp",
+		//   "-arch",
+		//   "arm64",
+		  "-I/usr/local/mysql-connector-c++-8.0.33/include/jdbc",
+		  "-L/usr/local/mysql-connector-c++-8.0.33/lib64",
+		  "-lmysqlcppconn"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		}
+	  },
+	  {
+		"label": "Run",
+		"type": "shell",
+		"command": "${fileDirname}/${fileBasenameNoExtension}"
+	  }
+	]
+  }
+  

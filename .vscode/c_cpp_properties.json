@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/mysql-connector-c++/include/jdbc"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/System/Library/Frameworks",
+                "/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "macos-clang-arm64"
+            
+        }
+    ],
+    "version": 4
+}
+//g++ -std=c++0x  -o myprogram 1.cpp -I"/usr/local/mysql-connector-c++-8.0.33/include/jdbc" -L"/usr/local/mysql-connector-c++-8.0.33/lib64" -lmysqlcppconn
